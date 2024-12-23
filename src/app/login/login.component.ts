@@ -69,7 +69,7 @@ export class LoginComponent {
        
     this.isLoading=true
         const url =
-        `https://dev-api-unifed.infisign.net/unifed-dev-auth-service/unifed/infisignunifed1734603742/custom/jwt/login/`;
+        `https://unifed-dev-api.infisign.net/unifed-auth-service/unifed/infisignunifed1734957448/custom/jwt/login/`;
         const headers = new HttpHeaders({
          
           'Accept':"application/json" ,
@@ -80,9 +80,9 @@ export class LoginComponent {
         });
      const payload={
       access_token: this.access_token,
-      application_id: "https://demo1744.zendesk.com",
+      application_id: "https://entrans4487.zendesk.com",
       primary_attribute: "username",
-      application_uri: "https://dev-api-unifed.infisign.net/unifed-dev-auth-service/unifed/infisignunifed1734603742/saml/idp/sso/init/?sp=https://demo1744.zendesk.com"
+      application_uri: "https://unifed-dev-api.infisign.net/unifed-auth-service/unifed/infisignunifed1734957448/saml/idp/sso/init/?sp=https://entrans4487.zendesk.com"
     }
      
         this.http.post(url , payload,{headers} ).subscribe({
